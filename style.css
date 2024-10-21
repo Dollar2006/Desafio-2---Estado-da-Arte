@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Prompt", sans-serif;
+    scroll-behavior: smooth;
+  }
+  body{
+    background-image: url("Img/Fundo\ Section1.png");
+    background-attachment: fixed;
+  }
+
+  .barra-nav{
+      background-color: #0F0F10;
+      border: none;
+      box-shadow: 0 2px 4px #AECAFF;
+      font-family: "Prompt", sans-serif;
+      font-weight: 400;
+
+  }
+  .nav-link,.nav-link:hover,.navbar-brand,.navbar-brand:hover,.btn,.btn:hover, main{
+      color: #A2D0E5;
+  }
+  .btn-section1{
+    padding: 20px 25px;
+    margin: 0 20px;
+    border-radius: 10px;
+    font-family: "Prompt", sans-serif;
+    color: #fff;
+    transition: .8s ease;
+  }
+  .left-btn{
+    background: #0F1B59;
+  }
+  .left-btn:hover{
+    border: 2px solid #fff;
+  }
+  .right-btn{
+    background: #121212;
+    border: none;
+  }
+  .right-btn:hover{
+    box-shadow: 0 2px 8px #AECAFF;
+  }
+  .card{
+    background: rgba(159, 242, 254,50%);
+    border: none;
+    box-shadow: 0 4px 20px rgba(159, 242, 254, 50%);
+    color: #fff;
+  }
+  .carousel-item {
+    transition: 1.5s;
+  }
+  .bd-placeholder-img{
+    height: 34rem;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .accordion-button{
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    color: #AECAFF;
+  }
+  @keyframes cores{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg)
+    }
+  }
+.Formulario{
+    background-color: rgba(161, 212, 240, 25%);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 15px rgba(118, 239, 255,50%);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+} 
+.Formulario h1{
+    color: white;
+}
+.Formulario input{
+    justify-self: center;
+}
+.Formulario label{
+    color: #A5F4FF;
+}
+.Formulario button{
+    margin-top: 20px;
+    padding: 20px 80px;
+    border-radius: 15px;
+    background: #198998;
+}
+img{
+    object-position: center;
+    object-fit: cover;
+}
+@media (max-width: 768px){
+    .imagem{
+        display: none;
+    }
+    .Formulario{
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
