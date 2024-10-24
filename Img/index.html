@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+      font-family: "Prompt", sans-serif;
+    }
+    body{
+      background-image: url("Img/Fundo\ Section1.png");
+      background-attachment: fixed;
+    }
+
+    .barra-nav{
+        background-color: #0F0F10;
+        border: none;
+        box-shadow: 0 2px 4px #AECAFF;
+        font-family: "Prompt", sans-serif;
+        font-weight: 400;
+
+    }
+    .nav-link,.nav-link:hover,.navbar-brand,.navbar-brand:hover,.btn,.btn:hover, main{
+        color: #A2D0E5;
+    }
+    .btn-section1{
+      padding: 20px 25px;
+      margin: 0 20px;
+      border-radius: 10px;
+      font-family: "Prompt", sans-serif;
+      color: #fff;
+      transition: .8s ease;
+    }
+    .left-btn{
+      background: #0F1B59;
+    }
+    .left-btn:hover{
+      border: 2px solid #fff;
+    }
+    .right-btn{
+      background: #121212;
+      border: none;
+    }
+    .right-btn:hover{
+      box-shadow: 0 2px 8px #AECAFF;
+    }
+    .card{
+      background: rgba(159, 242, 254,50%);
+      border: none;
+      box-shadow: 0 4px 20px rgba(159, 242, 254, 50%);
+      color: #fff;
+    }
+    .carousel-item {
+      transition: 1.5s;
+    }
+    .bd-placeholder-img{
+      height: 34rem; 
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .accordion-button{
+      font-family: "Prompt", sans-serif;
+      font-weight: 600;
+      color: #AECAFF;
+    }
+    @keyframes cores{
+      0%{
+        filter: hue-rotate(0deg);
+      }
+      100%{
+        filter: hue-rotate(360deg)
+      }
+    }
+    </style>  
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid barra-nav">
+                <a class="navbar-brand d-flex align-items-center me-5" href="#">
+                    <img src="Img/Mug.svg" alt="Logo" width="40" height="40">
+                    <h1>CCA</h1>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-5 me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./resumo.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./contato.html">Contato</a>
+                            </li>
+                          </ul>
+                          <button class="btn btn-login" type="submit">Login</button>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+          <section class="container-sm d-flex flex-column justify-content-center" id="FirstSection" style="max-width: 600px;">
+            <h2 class="text-center fs-1 align-self-center lh-base mb-3">Uma Academia de Tecnologia feita para programadores e apreciadores de café</h2>
+            <p class="text-center fs-5 lh-lg mb-5">A Coding Coffee Academy oferece cursos práticos e colaborativos para formar profissionais qualificados e prontos para o mercado de tecnologia.</p>
+            <div class="d-flex justify-content-center mt-3">
+              <button class="btn-section1 left-btn">
+                Explore nossos cursos gratuitamente
+              </button>
+              <button class="btn-section1 right-btn">
+                Solicite uma Demonstração
+              </button>
+            </div>
+          </section>
+
+          <section class="d-flex container text-center mt-5 gap-5">
+            <div class="row">
+              <div class="col m-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title d-flex align-items-end">
+                      <img src="Img/lock.svg" width="40" height="40" class="me-2">
+                      Aprendizado Seguro
+                    </h5>
+                    <p class="card-text">
+                      Na CCA, garantimos que você aprenda com as melhores práticas de segurança e privacidade digital
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title d-flex align-items-end">
+                      <img src="Img/e-learning.svg" width="40" height="40" class="me-2">
+                      Estudo sem complicações
+                    </h5>
+                    <p class="card-text">
+                      Nossos cursos conectam teoria e prática de forma simples, preparando você para o mercado real.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title d-flex align-items-end">
+                      <img src="Img/multitasking.svg" width="40" height="40" class="me-2">
+                      Suporte Multi-Habilidades
+                    </h5>
+                    <p class="card-text">
+                      Nossos cursos conectam teoria e prática de forma simples, preparando você para o mercado real.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="container-xl">
+            <h2 class="mt-3">Cursos Disponiveis:</h2>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5">
+              <div class="carousel-inner">
+                <div class="carousel-item active ">  
+                  <h1>Desenvolvimento Web</h1>
+                  <img src="Img/DevWeb.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                  <h1>Engenharia de Dados</h1>
+                  <img src="Img/DataAnalist.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                  <h1>Arquitetura e manutenção de computadores</h1>
+                  <img src="Img/ArquiteturaManutencao.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                  <h1>Segurança da Informação</h1>
+                  <img src="Img/Hacker.jpg" alt=""class="bd-placeholder-img" width="100%" height="100%">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+          <section>
+            <div class="container-md mt-5">
+              <div class="accordion accordion-flush" id="accordionFlushExample" data-bs-theme="dark">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Sobre a Academia
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Prepare-se para transformar sua carreira! Na Coding Coffee Academy, você encontra um ambiente inovador e motivador, onde aprender programação vai além da teoria. Com foco em práticas reais e modernas, você desenvolve as habilidades mais procuradas pelo mercado de tecnologia. Além disso, a CCA oferece oportunidades para participar de projetos desafiadores, construir um portfólio sólido e se conectar com profissionais da área.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
